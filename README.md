@@ -60,11 +60,29 @@ The contact form is set up with a basic API route. To make it functional:
 
 ## Deployment
 
-The easiest way to deploy is using [Vercel](https://vercel.com):
+### GitHub Pages Deployment
 
-1. Push your code to GitHub
-2. Import your repository in Vercel
-3. Deploy!
+1. Push your code to GitHub:
+```bash
+git add .
+git commit -m "Initial commit"
+git push origin main
+```
+
+2. Enable GitHub Pages:
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Under "Source", select "GitHub Actions"
+   - The site will be automatically deployed when you push to the main branch
+
+3. Your site will be available at: `https://<your-github-username>.github.io/portfolio`
+
+### Manual Build
+To build the site locally:
+```bash
+npm run build
+```
+The static files will be generated in the `out` directory.
 
 ## License
 
